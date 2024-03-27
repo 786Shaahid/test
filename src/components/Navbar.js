@@ -62,7 +62,7 @@ const UserBox=styled('Box')(({theme})=>({
         
 }))
 
-function Navbar() {
+function Navbar({mode}) {
  const [open,setOpen]=useState(false);
 
   return (
@@ -77,7 +77,7 @@ function Navbar() {
         </Typography>
         <MenuIcon sx={{ display: { xs: "block", sm: "none" } }} />
         <SeacharBox >
-          <InputBase  placeholder="Search....." fullWidth/>
+          <InputBase  placeholder="Search....." fullWidth sx={{color:mode==='dark'? "black":"text.primary"}}/>
         </SeacharBox>
         <IconsNBox >
           <Badge badgeContent={6} color="secondary">
