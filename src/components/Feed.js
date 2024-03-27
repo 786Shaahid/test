@@ -6,7 +6,7 @@ function Feed({mode  , setMode}) {
  
   return (
     <Box  flex={4} p={2}>
-      <Switch  onChange={(e)=>setMode(mode==="light" ? 'dark':'light')} sx={{display:{sx:'block',md:'none'}}} />
+      <Switch  onChange={(e)=>setMode(mode==="light" ? 'dark':'light')} sx={{display:{sx:'block',md:'none'}}} />Dark Mode
       <Post/>
       <Post/>
       <Post/>
