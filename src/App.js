@@ -19,7 +19,7 @@ function App() {
         <Navbar />
         <Stack direction={"row"} spacing={2} justifyContent={"space-between"}>
           <SideBar mode={mode} setMode={setMode} />
-          <Feed />
+          <Feed mode={mode} setMode={setMode}/>
           <Rightbar />
         </Stack>
         <Add />
