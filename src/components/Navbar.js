@@ -26,6 +26,7 @@ const SeacharBox = styled("div")(({theme})=>({
   padding: "0 10px",
   borderRadius:theme.shape.borderRadius,
   width:"40%"
+
   // display:"flex",
   // justifyContent:"center",
   // alignItems:"center"
@@ -76,7 +77,7 @@ function Navbar() {
         </Typography>
         <MenuIcon sx={{ display: { xs: "block", sm: "none" } }} />
         <SeacharBox >
-          <InputBase  placeholder="Search....." />
+          <InputBase  placeholder="Search....." fullWidth/>
         </SeacharBox>
         <IconsNBox >
           <Badge badgeContent={6} color="secondary">
